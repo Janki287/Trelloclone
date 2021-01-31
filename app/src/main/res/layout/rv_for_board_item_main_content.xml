@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="?attr/selectableItemBackground">
+<!--  this linear layout is for recycler view where list items are placed vertically  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_for_rv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_board_place_holder"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="3dp"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_board_name_for_rv_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Board Name"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tv_created_by_for_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Created By"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryTextColor"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_margin="5dp"
+        android:background="@color/dividerColor"/>
+
+</LinearLayout>

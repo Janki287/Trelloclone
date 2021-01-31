@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:background="@drawable/ic_background"
+    tools:context=".activities.IntroActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TrelloClone"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_task_image"
+        android:contentDescription="Task Image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Let's Get Started"
+        android:textColor="@color/primaryTextColor"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="This is a task manager app for programmers adn it is a clone of Trello App"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_sign_in_intro_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@drawable/intro_activity_button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="SIGN IN"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/btn_sign_up_intro_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="SIGN UP"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background="@drawable/intro_activity_button_white_background"/>
+
+</LinearLayout>

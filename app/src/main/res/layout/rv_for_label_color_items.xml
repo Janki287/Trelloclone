@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+<!-- we are using frame layout here because we want CHECK ICON above the VIEW as shown below  -->
+
+    <View
+        android:id="@+id/view_for_label_color"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+
+    <ImageView
+        android:id="@+id/iv_done_btn_for_label_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center|end"
+        android:src="@drawable/ic_vector_done_white_24dp"
+        tools:visibility="visible"
+        android:visibility="gone"/>
+
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@drawable/ic_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--  app:layout_behavior="@string/appbar_scrolling_view_behavior" this make linear layout scrollable  -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main_activity_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibilty="visible"/>
+        <!--   adapter = BoardItemsAdapter     -->
+
+        <TextView
+            android:id="@+id/tv_main_activity_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            android:text="No Boards Available"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:visibility="visible"
+            tools:visibility="visible"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

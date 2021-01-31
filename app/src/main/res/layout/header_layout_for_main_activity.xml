@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom"
+    android:background="@drawable/background_for_header_for_main_activity"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+<!--  android:gravity="bottom" will set the circular image view and text view at the bottom of this linear layout  -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_user_for_menu_main_activity"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        android:contentDescription="user_image"
+        android:src="@drawable/ic_user_place_holder"/>
+
+      <TextView
+          android:id="@+id/tv_user_for_menu_main_activity"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:padding="5dp"
+          android:text="TrelloClone"
+          android:textColor="@android:color/white"
+          android:textSize="30sp"
+          android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/primaryTextColor"/>
+
+</LinearLayout>
